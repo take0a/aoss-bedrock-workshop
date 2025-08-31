@@ -21,6 +21,13 @@ uv add ipykernel
 uv run ipython kernel install --user --name=aoss-bedrock-workshop
 ```
 
+- Git からクローンした場合は、以下のようにします。
+```
+git clone https://github.com/take0a/aoss-bedrock-workshop.git
+cd aoss-bedrock-workshop
+uv sync
+```
+
 - VSCode には、以下の Extension を導入します。
     - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
     - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
@@ -68,5 +75,5 @@ uv run ipython kernel install --user --name=aoss-bedrock-workshop
             ```
             curl "https://static.us-east-1.prod.workshops.aws/public/620273a4-2710-402b-903b-ec23011a465b/static/notebooks.tar.gz" --output notebooks.tar.gz
             ```
-
-### 1-basic-search.ipynb
+### 環境変数
+- .env.sample を参考に、上記で準備したロールの ARN とエンドポイントのホストを .env として記載してください。
